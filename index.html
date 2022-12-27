@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Ganerator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;700&family=Noto+Serif+Telugu:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="display">
+        <div class="password"></div>
+        <div class="copy">Generate Your Password</div>
+      </div>
+      <form>
+        <label for="rangeNumber">Lenght</label>
+        <div class="lenght-div">
+          <input
+            id="rangeNumber"
+            type="range"
+            value="10"
+            min="10"
+            max="40"
+            oninput="rangevalue.value=value"
+          />
+          <output class="output" id="rangevalue">10</output>
+        </div>
+
+        <label for="uppercase">Uppercase</label>
+        <input id="uppercase" type="checkbox" />
+
+        <label for="numbers">Numbers</label>
+        <input id="numbers" type="checkbox" />
+
+        <label for="symbols">Symbols</label>
+        <input id="symbols" type="checkbox" />
+
+        <button type="submit">Generate</button>
+      </form>
+    </div>
+  </body>
+</html>
