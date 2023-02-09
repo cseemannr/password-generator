@@ -32,7 +32,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 30rem;
+  width: min(30rem, 90%);
   padding: 3rem;
   background: var(--dark);
   background: linear-gradient(347deg, var(--dark) 0%, var(--light) 100%);
